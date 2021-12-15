@@ -62,8 +62,8 @@ SI507 Final Project
 - Make sure Yelp_Combined.json and Yelp_Organized.json and Yelp_lookup.py are in your work space.
 - Run Yelp_lookup.py in your command window.
 - Choose from Pickup, Delivery or Others, this is a one time choice.
-- Choose from the top 10 cusine styles or choose others.
-- Choose your desired price level, or others for restaurants without specific price level, or go back to rechoose cusine styles.
+- Choose from the top 10 cuisine styles or choose others.
+- Choose your desired price level, or others for restaurants without specific price level, or go back to rechoose cuisine styles.
 - A list of recommended restaurant will be printed out in the command window, ranked based on their user ratings from high to low.
 - You can choose the restaurant you are insterested in, which will take you to the yelp webpage for that restaurant or go back to remake choices.
 - Type exit to exit the program at anytime.
