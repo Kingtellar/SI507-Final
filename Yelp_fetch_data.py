@@ -15,7 +15,7 @@ from urllib.parse import urlencode
 API_KEY= 'Enter Your Key'
 API_HOST = 'https://api.yelp.com'
 SEARCH_PATH = '/v3/businesses/search'
-BUSINESS_PATH = '/v3/businesses/'  # Business ID will come after slash.
+BUSINESS_PATH = '/v3/businesses/'  
 DEFAULT_TERM = ''
 DEFAULT_LOCATION = 'Ann Arbor, MI'
 SEARCH_LIMIT = 50
@@ -128,9 +128,91 @@ def main():
 
 main()
 
-f = open("Yelp_Combined.txt", "r")
-data = f.read()
+
 #print(data)
+
+dict_all = []
+with open('Yelp_0_50.json') as f:
+    data1 = json.load(f)
+    item1 = data1["businesses"]
+
+with open('Yelp_50_100.json') as f:
+    data2 = json.load(f)
+    item2 = data2["businesses"]
+
+with open('Yelp_100_150.json') as f:
+    data3 = json.load(f)
+    item3 = data3["businesses"]
+
+with open('Yelp_150_200.json') as f:
+    data4 = json.load(f)
+    item4 = data4["businesses"]
+
+with open('Yelp_200_250.json') as f:
+    data5 = json.load(f)
+    item5 = data5["businesses"]
+
+with open('Yelp_250_300.json') as f:
+    data6 = json.load(f)
+    item6 = data6["businesses"]
+
+with open('Yelp_300_350.json') as f:
+    data7 = json.load(f)
+    item7 = data7["businesses"]
+
+with open('Yelp_350_400.json') as f:
+    data8 = json.load(f)
+    item8 = data8["businesses"]
+
+with open('Yelp_400_450.json') as f:
+    data9 = json.load(f)
+    item9 = data9["businesses"]
+
+with open('Yelp_450_500.json') as f:
+    data10 = json.load(f)
+    item10 = data10["businesses"]
+
+with open('Yelp_500_550.json') as f:
+    data11 = json.load(f)
+    item11 = data11["businesses"]
+
+with open('Yelp_550_600.json') as f:
+    data12 = json.load(f)
+    item12 = data12["businesses"]
+
+with open('Yelp_600_650.json') as f:
+    data13 = json.load(f)
+    item13 = data13["businesses"]
+
+with open('Yelp_650_700.json') as f:
+    data14 = json.load(f)
+    item14 = data14["businesses"]
+
+with open('Yelp_700_750.json') as f:
+    data15 = json.load(f)
+    item15 = data15["businesses"]
+
+with open('Yelp_750_800.json') as f:
+    data16 = json.load(f)
+    item16 = data16["businesses"]
+
+with open('Yelp_800_850.json') as f:
+    data17 = json.load(f)
+    item17 = data17["businesses"]
+
+with open('Yelp_850_900.json') as f:
+    data18 = json.load(f)
+    item18 = data18["businesses"]
+
+with open('Yelp_900_950.json') as f:
+    data19 = json.load(f)
+    item19 = data19["businesses"]
+
+with open('Yelp_950_1000.json') as f:
+    data20 = json.load(f)
+    item20 = data20["businesses"]
+
+dict_all = dict_all + item1 + item2 + item3 + item4 + item5 + item6 + item7 + item8 + item9 + item10 + item11 + item12 + item13 + item14 + item15 + item16 + item17 + item18 + item19 + item20
 
 
 with open("Yelp_Combined.json", "w") as outfile:
