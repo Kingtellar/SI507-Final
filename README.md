@@ -13,7 +13,7 @@ SI507 Final Project
 - sys
 
 # Data Structure: Tree
-"
+```
 -pickup_list = [[],
                 [[],[],[],[],[],[]],
                 [[],[],[],[],[],[]],
@@ -57,7 +57,7 @@ SI507 Final Project
 -List1[0] = pickup_list
 -List1[1] = delivery_list
 -List1[2] = other_list
-"
+```
 # Interaction Instructions
 - Make sure Yelp_Combined.json and Yelp_Organized.json and Yelp_lookup.py are in your work space.
 - Run Yelp_lookup.py in your command window.
